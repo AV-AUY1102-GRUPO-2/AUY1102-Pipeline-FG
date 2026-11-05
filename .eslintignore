@@ -7,3 +7,4 @@ node_modules
 .vscode
 resources
 src/quality/*
+scripts
