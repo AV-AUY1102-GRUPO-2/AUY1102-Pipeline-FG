@@ -44,6 +44,7 @@
     "sort": "sort-package-json package.json",
     "test:unit": "jest --passWithNoTests",
     "test:coverage": "jest --coverage",
+    "test:report": "node scripts/test-report.js",
     "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail",
     "test:watch": "jest --watch --verbose --colors --expand --maxWorkers=25%",
     "types": "dts-bundle-generator --config dts-generator.json"
