@@ -45,6 +45,9 @@
     "test:unit": "jest --passWithNoTests",
     "test:coverage": "jest --coverage",
     "test:report": "node scripts/test-report.js",
+    "audit:all": "npm audit",
+    "audit:prod": "npm audit --omit=dev",
+    "audit:ci": "npm audit --omit=dev --audit-level=high",
     "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail",
     "test:watch": "jest --watch --verbose --colors --expand --maxWorkers=25%",
     "types": "dts-bundle-generator --config dts-generator.json"
