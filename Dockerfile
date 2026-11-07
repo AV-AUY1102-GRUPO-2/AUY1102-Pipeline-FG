@@ -1,7 +1,8 @@
-FROM node:14-alpine3.16
-
-COPY . .
+FROM node:24-alpine
 
 WORKDIR /usr/src/app/
 
+COPY . .
+
 RUN npm version
+
