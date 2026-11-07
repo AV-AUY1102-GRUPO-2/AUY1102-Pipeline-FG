@@ -26,9 +26,9 @@ Las 18 pruebas existentes pasan, pero la cobertura de líneas es de alrededor de
 
 **SonarCloud** *(Felipe · [ver paso a paso](https://github.com/AV-AUY1102-GRUPO-2/AUY1102-Pipeline-FG/wiki/05-SonarCloud))*. Conectamos el repositorio y obtuvimos nota E en seguridad (16 problemas), D en confiabilidad y A en mantenibilidad, sin código duplicado. Los problemas más graves eran dos tokens de GitHub escritos en los archivos `.npmrc` y `credentials.yml`.
 
-**Snyk** *(Felipe · [ver paso a paso](https://github.com/AV-AUY1102-GRUPO-2/AUY1102-Pipeline-FG/wiki/06-Snyk))*. Importamos el repositorio y Snyk analizó el `Dockerfile` y el `package.json`. La imagen base `node:14-alpine3.16`, sin soporte, concentraba 37 de las 44 vulnerabilidades encontradas (1 crítica y 14 altas).
+**Snyk** *(Felipe · [ver paso a paso](https://github.com/AV-AUY1102-GRUPO-2/AUY1102-Pipeline-FG/wiki/06-Snyk))*. Importamos el repositorio y Snyk analizó el `Dockerfile` y el `package.json`. La imagen base `node:14-alpine3.16`, sin soporte, concentraba 🔧 COMPLETAR [N] vulnerabilidades.
 
-**Remediaciones** *([ver paso a paso](https://github.com/AV-AUY1102-GRUPO-2/AUY1102-Pipeline-FG/wiki/07-Remediaciones))*. José eliminó los dos tokens expuestos detectados por SonarCloud y los agregó al `.gitignore` (PR #19, aprobado por Felipe). Felipe actualizó la imagen de Docker a `node:24-alpine` siguiendo la recomendación de Snyk (PR #20, aprobado por José), y las vulnerabilidades del contenedor bajaron de 37 a solo 1, de severidad baja.
+**Remediaciones** *([ver paso a paso](https://github.com/AV-AUY1102-GRUPO-2/AUY1102-Pipeline-FG/wiki/07-Remediaciones))*. José eliminó los dos tokens expuestos detectados por SonarCloud y los agregó al `.gitignore` (PR #19, aprobado por Felipe). Felipe actualizó la imagen de Docker a `node:24-alpine` siguiendo la recomendación de Snyk (PR 🔧 COMPLETAR #N, aprobado por José), y las vulnerabilidades del contenedor bajaron de 🔧 COMPLETAR [antes] a [después].
 
 ## Parte 3 · Documentación
 
